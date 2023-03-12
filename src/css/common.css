@@ -41,3 +41,12 @@ img {
   text-transform: uppercase;
 }
 
+.form label {
+  display: inline-block;
+ }
+
+
+.form input {
+  display: block;
+} 
+
