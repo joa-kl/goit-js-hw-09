@@ -50,3 +50,9 @@ img {
   display: block;
 } 
 
+.form input:focus,
+.form input:active {
+  color:darkcyan;
+  outline-color:darkcyan;
+}
+
