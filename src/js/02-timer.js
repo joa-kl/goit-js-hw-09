@@ -10,7 +10,6 @@ const days = document.querySelector("span[data-days");
 const hours = document.querySelector("span[data-hours]")
 const minutes = document.querySelector("span[data-minutes]");
 const seconds = document.querySelector("span[data-seconds]");
-// const timerHtml = document.querySelector('.timer');
 
 startBtn.disabled = true;
 
@@ -56,17 +55,14 @@ function addLeadingZero(v) {
 
 startBtn.addEventListener("click", () => {
     let timer = setInterval(() => {
-        let countdown = new Date(input.value) - new Date();
         startBtn.disabled = true;
+        let countdown = new Date(input.value) - new Date();
         if (countdown >= 0) {
             let timeObject = convertMs(countdown);
             days.textContent = addLeadingZero(timeObject.days);
             hours.textContent = addLeadingZero(timeObject.hours);
             minutes.textContent = addLeadingZero(timeObject.minutes);
             seconds.textContent = addLeadingZero(timeObject.seconds);
-            // if (countdown <= 30000) {
-            //     timerHtml.style.color = 'tomato';
-            // }
         }
         
     }, 1000);

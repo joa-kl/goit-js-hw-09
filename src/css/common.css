@@ -17,6 +17,17 @@ img {
   max-width: 100%;
 }
 
+button {
+  background-color:cadetblue;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
 .timer {
   display: flex;
   justify-content: start;
